@@ -1,0 +1,353 @@
+@font-face {
+    font-family: gilroy-r;
+    src: url('Fonts/Gilroy-Regular.ttf');
+}
+@font-face {
+    font-family: gilroy-m;
+    src: url('Fonts/Gilroy-Medium.ttf');
+}
+@font-face {
+    font-family: gilroy-b;
+    src: url('Fonts/Gilroy-Bold.ttf');
+}
+@font-face {
+    font-family: gilroy-h;
+    src: url('Fonts/Gilroy-Heavy.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy-m;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    /* font-size: 62.5%; */
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #111;
+}
+
+a{
+    text-decoration: none;
+}
+
+#nav{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    /* background-color: red; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7vw;
+}
+
+#nav a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    gap: 0.5rem;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+#nav-mid{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#nav-mid #logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#nav-mid #logo .line{
+    height: 2px;
+    width: 100px;
+    background-color: red;
+}
+#nav img{
+    width: 120px;
+}
+
+
+/* Hero Section */
+
+#hero{
+    display: flex;
+    width: 100%;
+    min-height: 90vh;
+    /* background-color: red; */
+}
+
+#h-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: calc(100%/3);
+    min-height: inherit;
+    padding: 0 3vw;
+    /* background-color: yellow; */
+}
+
+#h-left>h1{
+    color: white;
+    line-height: 1;
+    font-size: 4vw;
+}
+#h-left h1 span{
+    color: red;
+    line-height: 1;
+    font-size: 4vw;
+}
+#h-left>p{
+    color: white;
+    width: 80%;
+    line-height: 1;
+    font-size: 1vw;
+    margin-top: 1vw;
+}
+#h-button{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 1vw;
+    /* background-color: #fff; */
+}
+#h-button>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: red;
+    color: white;
+    width: 10vw;
+ 
+    padding: 0.5vw 1vw;
+    border-radius: 4vw;
+    font-family: gilroy-b;
+    font-size: 1.2vw;
+}
+
+#h-button>i{
+    margin-left: 5px;
+    color: red;
+}
+
+#h-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100%/3);
+    min-height: inherit;
+    /* background-color: green; */
+}
+#h-mid #tomb{
+    position: relative;
+    width: 70%;
+    height: 80vh;
+    /* background-color: orange; */
+    background-image: url('img/Coca-bg-blur.png');
+    background-size: cover;
+    background-position:center;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+}
+#h-mid img{
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 80vh;
+}
+#h-mid #capsule{
+    position: absolute;
+    top: 30%;
+    left: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3.6vw;
+    width: 50%;
+    border-radius: 5rem;
+    background-color: black;
+}
+
+#cap-circle{
+    width: 40px;
+    height: 40px;
+    background-image: url('img/beep.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+#cap-text>h4,h6{
+    color: white;
+    font-size: 0.7rem;
+}
+#cap-text h6{
+    color: #b369f3;
+}
+#h-right{
+    position: relative;
+    width: calc(100%/3);
+    min-height: inherit;
+    /* background-color: blue; */
+}
+
+#h-r-bottom{
+    position: absolute;
+    bottom: 10%;
+    width: 80%;
+    min-height: 20vh;
+    padding: 0 2vw;
+    /* background-color: red; */
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    opacity: 0.5;
+    border-bottom: 1px grey solid;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.row:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    opacity: 1;
+    border-bottom: initial;
+    
+}
+.row:nth-child(3)>p{
+    opacity: 1;
+    border-bottom: initial;
+    font-size: 0.7rem;
+    margin-top: 10px;
+    opacity: 0.5;
+    width: 80%;
+}
+
+#scroll{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1vw;
+    color: #666;
+    /* background-color: violet; */
+}
+
+#scroll #circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px white solid;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* background-color: red; */
+}
+
+
+@media (width<=500px){
+    #nav-mid a{
+        display: none;
+    }
+
+    #nav img{
+        width: 90px;
+    }
+
+    #nav-mid #logo .line {
+        height: 2px;
+        width: 35px;
+        background-color: red;
+    }
+    #nav {
+        padding: 0px 5vw;
+    }
+
+    #hero{
+        flex-direction: column;
+    }
+
+    #h-left{
+        min-height: initial;
+        width: 100%;
+        padding: 20px 20vw;
+    }
+    #h-left>h1{
+        font-size: 8vw;
+    }
+    #h-left h1 span {
+        line-height: 1;
+        font-size: 8vw;
+    }
+
+    #h-left>p {
+        font-size: 3.5vw;
+    }
+    
+    #h-button{
+        margin-top: 4vw;
+    }
+
+    #h-button>a {
+        width: 23vw;
+        padding: 0.5vw 1vw;
+        font-size: 3.2vw;
+    }
+
+    #h-mid{
+        width: 100%;
+    }
+
+    #h-mid #tomb{
+        width: 65%;
+        height: 50vh;
+    }
+
+    #h-mid img{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 55vh;
+    }
+
+    #h-mid #capsule{
+        height: 12vw;
+    }
+
+    #h-right{
+        min-height: initial;
+        width: 100%;
+    }
+
+    #h-r-bottom {
+        position: static;
+        width: 100%;
+        min-height: 20vh;
+        padding: 0 8vw;
+        /* background-color: red; */
+    }
+}
